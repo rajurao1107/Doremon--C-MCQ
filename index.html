@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+<style>
+  body{
+    font-size :50px ;
+    padding :50px ;
+    background-size :50px ;
+    background-color :#00ccff ;
+  }
+    p{
+    position :relative ;
+    width :400px ;
+    height :80px ;
+    left :0px ;
+    text-align: center ;
+    border-radius :50px ;
+    box-shadow :0px 10px 10px 0px gray;
+background-color :white ;
+
+  }
+  #con{
+    position :relative ;
+    border-radius :20px 20px 500px 500px ;
+    height :200px ;
+    padding :50px ;
+    width :450px;
+    bottom :80px ;
+    left:55%;
+    top:280px ;
+    margin :auto ;
+    display :block ;
+    transition :1s;
+    background-color :white ;
+    box-shadow :0px 30px 50px 0px grey ;
+  }
+
+  h5{
+    position :relative ;
+    box-shadow :0px 10px 10px 0px grey ;
+    padding :50px ;
+    background-color :#00ccff;
+    border-radius :50px ;
+    transition :5s ;
+  }
+ 
+  #myBtn1{
+    position :relative ;
+    height :100px ;
+    bottom :50px ;
+    border-radius :30px ;
+    border:hidden ;
+ 
+    left :15%;
+    top:30px ;
+    font-size :50px ;
+    background-color : #ffff00 ;
+    box-shadow:0px 0px 20px 0px gray ;
+    transition :1s ;
+  }
+
+  #myBtn{
+    position :relative;
+    height :120px;
+    width :200px;
+    border-radius :300px 300px 1000px 1000px;
+    color :white ;
+    border :hidden ;
+    left :28%;
+    bottom :0px ;
+    font-size :30px;
+    background-color : red;
+    box-shadow:0px 0px 20px 0px gray ;
+  }
+#question{
+  opacity :0%;
+  transition :5s ;
+}
+.head{
+  position :relative ;
+  width :800px ;
+  left:5%;
+  height :800px ;
+  background-color :#00ccff ;
+  box-shadow :0px 50px 50px 0px black ;
+  border-radius :1000px ;
+}
+.white{
+  position :relative ;
+  width :650px ;
+  height :600px;
+  background-color :white ;
+  left :75px ;
+  top:200px ;
+  border-radius :1000px;
+}
+.leye{
+  position :relative ;
+  width :200px ;
+  height :250px;
+  background-color :white ;
+  left :108px ;
+  bottom :110px ;
+  border:2px solid black ;
+  border-radius :1000%;
+}
+.reye{
+  position :relative ;
+  width :200px ;
+  height :250px;
+  background-color :white ;
+  left :48% ;
+  bottom :60% ;
+  border:2px solid black ;
+  border-radius :1000%;
+  
+}
+.dot1{
+  position :relative ;
+  width :20px ;
+  height :35px;
+  background-color :white ;
+  left :115px ;
+  top :110px ;
+  border:20px solid black ;
+  border-radius :1000%;
+}
+.dot2{
+  position :relative ;
+  width :20px ;
+  height :35px;
+  background-color :white ;
+  left :25px ;
+  top :105px ;
+  border:20px solid black ;
+  border-radius :1000%;
+} 
+.nose {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    left: 258px;
+    bottom : 415px;
+    border: 2px solid black;
+    border-radius: 1000%;
+  }
+.mouth{
+    position: relative;
+    width: 500px;
+    height: 250px;
+    background-color: red;
+    left: 70px;
+    bottom : 355px;
+    border: 2px solid black;
+    border-radius: 0px 0px 1000px 1000px;
+  }
+.redline{
+    position: relative;
+    width: 70%;
+    height: 30px;
+    background-color: red;
+    left: 15%;
+    bottom : 350px;
+    border: 2px solid black;
+    border-radius: 50px;
+    z-index :1;
+  }
+#body{
+    position: relative;
+    width: 650px;
+    height: 800px;
+    background-color: #00ccff ;
+    box-shadow :0px 50px 50px 0px black ;
+    left: 0px;
+    bottom: 360px;
+    border-radius: 100px;
+    margin :auto ;
+    display :block ;
+
+  }
+.hand1{
+  position :relative ;
+  width:150px;
+  height :300px;
+  background-color :#00ccff ;
+  border-radius :500% 500% 50% 300%;
+  right:38px;
+  bottom :28px;
+  border :0px solid black ;
+  transform :rotate(40deg);
+}
+.hand2{
+  position :relative ;
+  width:150px;
+  height :300px;
+  background-color :#00ccff ;
+  border-radius :500% 500% 300% 50%;
+  left:538px;
+  bottom :330px;
+  border :px solid black ;
+  transform :rotate(-40deg);
+} 
+.finger1{
+  position :relative ;
+  width:150px;
+  height :150px;
+  background-color :white ;
+  border-radius :100px;
+  left:0px;
+  top:250px;
+}
+.finger2{
+  position :relative ;
+  width:150px;
+  height :150px;
+  background-color :white ;
+  border-radius :100px;
+  left:0px;
+  top:250px;
+} 
+#stomach {
+    position: relative;
+    width: 600px;
+    height: 700px;
+    background-color: white;
+    border-radius: 400px 400px 100px 100px;
+    right: 0px;
+    top : 130px;
+    margin :auto;
+    display :block;
+
+}
+.foot1{
+  position: relative;
+    width: 300px;
+    height: 200px;
+    background-color: white ;
+    border-radius: 100px ;
+    right:40px ;
+    top : 130px;
+   
+}
+.foot2{
+  position: relative;
+    width: 300px;
+    height: 200px;
+    background-color: white ;
+    border-radius: 100px ;
+    left:400px ;
+    bottom : 68px;
+    
+}
+#counter{
+  position :relative ;
+  
+  color:red;
+  z-index :1;
+  top:11750px;
+  left :220px;
+  
+}
+</style>
+
+<body>
+<script>
+function addition1(){
+  document.getElementById("dor").play();
+  document.getElementById("con").style.height = "10400px";
+  document.getElementById("question").style.opacity = "100%";
+  document.getElementById("stomach").style.height = "11030px";
+ var radius = document.getElementById("stomach").style.border-radius;
+ radius="100% 100% 100% 100%";
+ document.getElementById("body").style.height = "11200px";
+ document.getElementById("foota").style.top = "10500px";
+document.getElementById("footb").style.bottom = "-10300px";
+  document.getElementById("myBtn1").style.boxShadow = "#ffff00 0px 0px 50px 20px";
+  document.getElementById("counter").style.opacity = "100%";
+  
+}
+ 
+var c=-1;
+var count= ++c;
+    function touchmenow1(){
+    document.getElementById("inp1").style.background = "green";
+    
+    document.getElementById("counter").innerHTML = "Total "+  ++count+"/10";
+  }
+   
+  function touchmenow2(){
+    document.getElementById("inp2").style.background = "green";
+    
+    document.getElementById("counter").innerHTML = "Total "+ ++count+"/10";
+    
+  }
+    function touchmenow3(){
+    document.getElementById("inp3").style.background = "green";
+    document.getElementById("counter").innerHTML = "Total "+  ++count+"/10";
+  }
+    function touchmenow4(){
+    document.getElementById("inp4").style.background = "green";
+    document.getElementById("counter").innerHTML = "Total "+  ++count+"/10";
+  }
+    function touchmenow5(){
+    document.getElementById("inp5").style.background = "green";
+    document.getElementById("counter").innerHTML = "Total "+  ++count+"/10";
+  }
+    function touchmenow6(){
+    document.getElementById("inp6").style.background = "green";
+    document.getElementById("counter").innerHTML = "Total "+  ++count+"/10";
+  }
+    function touchmenow7(){
+    document.getElementById("inp7").style.background = "green";
+    document.getElementById("counter").innerHTML = "Total "+  ++count+"/10";
+  }
+    function touchmenow8(){
+    document.getElementById("inp8").style.background = "green";
+    document.getElementById("counter").innerHTML = "Total "+  ++count+"/10";
+  }
+    function touchmenow9(){
+    document.getElementById("inp9").style.background = "green";
+    document.getElementById("counter").innerHTML = "Total "+ +  ++count+"/10";
+  }
+  
+    function touchmenow10(){
+    document.getElementById("inp10").style.background = "green";
+    document.getElementById("counter").innerHTML = "Total "+     ++count+"/10";
+  }
+   function touchmenow01(){
+     document.getElementById("inp01").style.background = "red";
+    }
+    function touchmenow02(){
+     document.getElementById("inp02").style.background = "red";
+    }
+    function touchmenow03(){
+     document.getElementById("inp03").style.background = "red";
+    }
+    function touchmenow04(){
+     document.getElementById("inp04").style.background = "red";
+    }
+    function touchmenow05(){
+     document.getElementById("inp05").style.background = "red";
+    }
+    function touchmenow06(){
+     document.getElementById("inp06").style.background = "red";
+    }
+    function touchmenow07(){
+     document.getElementById("inp017").style.background = "red";
+    }
+    function touchmenow08(){
+     document.getElementById("inp08").style.background = "red";
+    }
+    function touchmenow09(){
+     document.getElementById("inp09").style.background = "red";
+    }
+    function touchmenow010(){
+     document.getElementById("inp010").style.background = "red";
+    }
+    function touchmenow011(){
+     document.getElementById("inp011").style.background = "red";
+    }
+    function touchmenow012(){
+     document.getElementById("inp012").style.background = "red";
+    }
+    function touchmenow013(){
+     document.getElementById("inp013").style.background = "red";
+    }
+    function touchmenow014(){
+     document.getElementById("inp014").style.background = "red";
+    }
+    function touchmenow015(){
+     document.getElementById("inp015").style.background = "red";
+    }
+    function touchmenow016(){
+     document.getElementById("inp016").style.background = "red";
+    }
+    function touchmenow017(){
+     document.getElementById("inp017").style.background = "red";
+    }
+    function touchmenow018(){
+     document.getElementById("inp018").style.background = "red";
+    }
+    function touchmenow019(){
+     document.getElementById("inp019").style.background = "red";
+    }
+    function touchmenow020(){
+     document.getElementById("inp020").style.background = "red";
+    }
+    function touchmenow021(){
+     document.getElementById("inp021").style.background = "red";
+    }
+    function touchmenow022(){
+     document.getElementById("inp022").style.background = "red";
+    }
+    function touchmenow023(){
+     document.getElementById("inp023").style.background = "red";
+    }
+    function touchmenow024(){
+     document.getElementById("inp024").style.background = "red";
+    }
+    function touchmenow025(){
+     document.getElementById("inp025").style.background = "red";
+    }
+    function touchmenow026(){
+     document.getElementById("inp026").style.background = "red";
+    }
+    function touchmenow027(){
+     document.getElementById("inp027").style.background = "red";
+    }
+    function touchmenow028(){
+     document.getElementById("inp028").style.background = "red";
+    }
+    function touchmenow029(){
+     document.getElementById("inp029").style.background = "red";
+    }
+    function touchmenow030(){
+     document.getElementById("inp030").style.background = "red";
+    }
+    
+ function addition2(){
+   document.getElementById("dor").pause();
+  document.getElementById("con").style.height = "200px";
+  document.getElementById("question").style.opacity = "0%";
+  document.getElementById("question").style.transition = "1s";
+  document.getElementById("stomach").style.height = "700px";
+  document.getElementById("stomach").style.transition = "1s";
+  document.getElementById("body").style.height = "800px";
+  document.getElementById("body").style.transition = "1s";
+  document.getElementById("foota").style.top = "130px";
+  document.getElementById("foota").style.transition = "1s";
+  document.getElementById("footb").style.bottom = "68px";
+  document.getElementById("footb").style.transition = "1s";
+  document.getElementById("myBtn1").style.boxShadow = "#ffff00 0px 0px 0px 0px"
+  
+  let mybutton = document.getElementById("myBtn");
+ 
+  window.onscroll = function() { scrollFunction() };
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+ <p id="counter">Total 0/10</p>
+<audio controls loop id="dor" style="display:none;" >
+  <source src="http://lel.com/link/to/stream.m3u" type="audio/mpeg">
+</audio>
+<div class="head">
+  
+  <div class="white">
+    
+    <div class="leye"><div class="dot1"></div></div><div class="reye"><div class="dot2"></div></div>
+    
+    <div class="nose"></div>
+    
+    <div class="mouth"></div>
+    <div class="redline">
+      <button onclick="addition1()" id="myBtn1">Click To Start </button>
+    </div>
+    <div id="body"><div class="hand1"><div class="finger1"></div></div><div class="hand2"><div class="finger2"></div></div><div id="foota" class="foot1"></div><div id="footb" class="foot2"></div></div>
+    
+  </div>
+   <div id="stomach">
+    
+   </div>
+</div>
+
+<div id="con">
+  
+  <div id="question">
+  <h5>1. What is the size of the int data type?</h5>
+  <ol >
+<p onclick="touchmenow1()" id="inp1">4 bytes</p>
+<p onclick="touchmenow01()" id="inp01">1 bytes</p>
+<p onclick="touchmenow02()" id="inp02">8 bytes</p>
+<p onclick="touchmenow03()" id="inp03">2 bytes</p>
+  </ol><br><br>
+  
+  <h5>2. Which among the following operators cannot be overloaded?</h5>
+  <ol>
+<p onclick="touchmenow04()" id="inp04">-</p>
+<p onclick="touchmenow05()" id="inp05">+</p>
+<p onclick="touchmenow2()" id="inp2">? :</p>
+<p onclick="touchmenow06()" id="inp06">%</p>
+  </ol>
+  
+    <h5>3. What among these is used to return the number of characters in the string?</h5>
+  <ol >
+<p onclick="touchmenow07()" id="inp07">size</p>
+<p onclick="touchmenow08()" id="inp08">length</p>
+<p onclick="touchmenow3()" id="inp3">size and length</p>
+<p onclick="touchmenow09()" id="inp09">name</p>
+  </ol><br><br>
+    <h5>4. Which of the following user-defined header file extension used in c++?</h5>
+  <ol >
+<p onclick="touchmenow010()" id="inp010">hg</p>
+<p onclick="touchmenow4()" id="inp4">cpp</p>
+<p onclick="touchmenow011()" id="inp011">h</p>
+<p onclick="touchmenow012()" id="inp012">hf</p>
+  </ol><br><br>
+    <h5>5. Which of the following approach is used by C++?</h5>
+  <ol >
+<p onclick="touchmenow013()" id="inp013">left-right</p>
+<p onclick="touchmenow014()" id="inp014">right-left</p>
+<p onclick="touchmenow5()" id="inp5">bottom-top</p>
+<p onclick="touchmenow015()" id="inp015">top-bottom</p>
+  </ol><br><br>
+    <h5>6. Which of the following correctly declares an array in C++?</h5>
+  <ol >
+<p onclick="touchmenow016()" id="inp016">array{10}</p>
+<p onclick="touchmenow017()" id="inp017">arr arr[10]</p>
+<p onclick="touchmenow018()" id="inp018">int array;</p>
+<p onclick="touchmenow6()" id="inp6">int array[10];</p>
+  </ol><br><br>
+    <h5>7. what is size of float datatype ?</h5>
+  <ol >
+<p onclick="touchmenow019()" id="inp019">1 bytes</p>
+<p onclick="touchmenow020()" id="inp020">2 bytes</p>
+<p onclick="touchmenow021()" id="inp021">6 bytes</p>
+<p onclick="touchmenow7()" id="inp7">4 bytes</p>
+  </ol><br><br>
+    <h5>8. Identify the scope resolution operator.</h5>
+  <ol >
+<p onclick="touchmenow022()" id="inp022">:</p>
+<p onclick="touchmenow8()" id="inp8">::</p>
+<p onclick="touchmenow023()" id="inp023">?</p>
+<p onclick="touchmenow024()" id="inp024">none</p>
+  </ol><br><br>
+    <h5>9. When was the c++ invented ?</h5>
+  <ol >
+<p onclick="touchmenow025()" id="inp025">1975</p>
+<p onclick="touchmenow9()" id="inp9">1979</p>
+<p onclick="touchmenow026()" id="inp026">1982</p>
+<p onclick="touchmenow027()" id="inp027">1985</p>
+  </ol><br><br>
+    <h5>10. Who invented c++ ?</h5>
+  <ol >
+<p onclick="touchmenow028()" id="inp028">Tim Barnes lee</p>
+<p onclick="touchmenow029()" id="inp29">Denise Ritchie</p>
+<p onclick="touchmenow030()" id="inp030">Elon Musk</p>
+<p onclick="touchmenow10()" id="inp10">Bjarne Stroustrup</p>
+  </ol><br>
+  
+  <button onclick="addition2()"  id="myBtn" title="Go to top">Click To End</button>
+  </div>
+</div>
+
+</html>
+</body>
+</html>
